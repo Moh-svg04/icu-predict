@@ -1,10 +1,9 @@
 """
 ICU Predict — Streamlit Dashboard
-Mohamed Gueye & Ilyes Hamzaoui — Université Le Havre Normandie, 2026
 
 Déployable sur :
-  - Hugging Face Spaces (gratuit, recommandé)
-  - Streamlit Community Cloud (gratuit)
+  - Hugging Face Spaces
+  - Streamlit Community Cloud
 """
 
 import numpy as np
@@ -271,7 +270,7 @@ st.markdown("""
   <div>
     <div style="font-size:1.5rem;font-weight:700;color:#e2e8f0">ICU Predict</div>
     <div style="font-size:.7rem;color:#64748b;font-family:'JetBrains Mono',monospace;
-                letter-spacing:.1em">ML-POWERED ICU OUTCOME ESTIMATION · UNIVERSITÉ LE HAVRE NORMANDIE</div>
+                letter-spacing:.1em">ML-POWERED ICU OUTCOME ESTIMATION · </div>
   </div>
 </div>
 """, unsafe_allow_html=True)
