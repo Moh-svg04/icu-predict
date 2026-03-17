@@ -14,8 +14,7 @@ Initially, this work started as a **scientific presentation in English** about a
 ## 🖼️ Research Poster
 Below is the original poster that inspired this implementation:
 
-![Research Poster](main.poster.png)
-*(Note: Replace 'poster_image.png' with the actual path to your image file in the repository)*
+![Research Poster](poster.png)
 
 ## 🔬 The Experiment & Results
 Inspired by the MIMIC-IV dataset, this tool reproduces the predictive pipeline described in the poster:
