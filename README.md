@@ -14,7 +14,7 @@ Initially, this work started as a **scientific presentation in English** about a
 ## 🖼️ Research Poster
 Below is the original poster that inspired this implementation:
 
-![Research Poster](poster_image.png)
+![Research Poster](main.poster.png)
 *(Note: Replace 'poster_image.png' with the actual path to your image file in the repository)*
 
 ## 🔬 The Experiment & Results
