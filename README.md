@@ -1,39 +1,35 @@
-ICU Outcomes Predictor: From Theory to Implementation
-📌 Project Overview
-This project is a functional implementation of a scientific study presented in our research poster: "Can AI Predict ICU Outcomes Better Than Doctors' Scoring Systems?".
+# ICU Outcomes Predictor: From Theory to Implementation
 
-While the initial research focused on analyzing existing literature and benchmarks (XGBoost vs. APACHE II), I decided to go one step further by personally conducting the experiment. This application processes real-world clinical data to predict patient mortality and Length of Stay (LOS).
+## 📌 Project Overview
+This project is a functional implementation and a personal reproduction of the scientific study presented in my research poster: **"Can AI Predict ICU Outcomes Better Than Doctors' Scoring Systems?"**. 
 
-🎓 Academic Context
-Origin: Scientific research poster for an oral examination.
+Initially, this work started as a **scientific presentation in English** about a research topic that fascinated me. After presenting the existing studies and the theoretical potential of AI in intensive care, I decided to go further and **personally conduct the experiment** to see if I could replicate the state-of-the-art results using real clinical data.
 
-Institution: UFR des Sciences et Techniques - Université Le Havre Normandie.
+## 🎓 Academic Context
+* **Origin:** Scientific research project & poster for an oral examination.
+* **Institution:** UFR des Sciences et Techniques - Université Le Havre Normandie.
+* **Authors:** Mohamed Gueye & Ilyes Hamzaoui.
+* **Core Objective:** To bridge the gap between theoretical research and practical implementation by building a machine learning pipeline from scratch.
 
-Authors: Mohamed Gueye & Ilyes Hamzaoui.
+## 🖼️ Research Poster
+Below is the original poster that inspired this implementation:
 
-Goal: Demonstrate the superiority of Machine Learning (XGBoost) over traditional medical scores like APACHE II.
+![Research Poster](poster_image.png)
+*(Note: Replace 'poster_image.png' with the actual path to your image file in the repository)*
 
-🔬 The Experiment
-Inspired by the MIMIC-IV dataset (67,748 patients), this tool reproduces the predictive pipeline described in the poster:
+## 🔬 The Experiment & Results
+Inspired by the MIMIC-IV dataset, this tool reproduces the predictive pipeline described in the poster:
+1.  **Data Extraction:** Processing vital signs (Heart Rate, MAP, SpO2) and critical lab values (Lactate, GCS, etc.).
+2.  **Model Training:** Implementation of an **XGBoost** classifier for mortality and a regressor for stay duration.
+3.  **Performance:** By conducting the study myself, I aimed to reach the **0.918 AUC** benchmark, demonstrating a significant improvement over traditional medical scores (APACHE II).
 
-Data Extraction: Processing vital signs (HR, MAP, SpO2) and lab values (Lactate, GCS, Creatinine) from the MIMIC-IV database.
+## 🛠️ Tech Stack
+* **Language:** Python 3.10+
+* **Machine Learning:** Pandas, Scikit-learn, XGBoost.
+* **Web Interface:** Streamlit.
+* **Dataset:** MIMIC-IV (PhysioNet).
 
-Model Training: Implementing an XGBoost regressor and classifier.
-
-Performance: Aiming for an AUC of 0.918, significantly outperforming the 0.73 average of traditional scoring systems.
-
-🛠️ Tech Stack
-Language: Python 3.10+
-
-Data Science: Pandas, Scikit-learn, XGBoost.
-
-Web Interface: Streamlit (for real-time prediction and visualization).
-
-Dataset: MIMIC-IV (PhysioNet).
-
-🚀 How to Run
-Clone the repo: git clone https://github.com/votre-repo/icu-predict.git
-
-Install dependencies: pip install -r requirements.txt
-
-Launch the App: streamlit run app.py
+## 🚀 How to Run
+1. `git clone https://github.com/votre-username/icu-predict.git`
+2. `pip install -r requirements.txt`
+3. `streamlit run app.py`
