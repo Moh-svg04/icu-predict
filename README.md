@@ -23,6 +23,7 @@ Inspired by the MIMIC-IV dataset, this tool reproduces the predictive pipeline d
 3.  **Performance:** By conducting the study myself, I aimed to reach the **0.918 AUC** benchmark, demonstrating a significant improvement over traditional medical scores (APACHE II).
 
 ##  Tech Stack
+* **Web Interface:** [ICU Predictor - Live App](https://icu-predict-dyknhzekurr6yswzahle8k.streamlit.app/) (Deployed on Streamlit Cloud)
 * **Language:** Python 3.10+
 * **Machine Learning:** Pandas, Scikit-learn, XGBoost.
 * **Web Interface:** Streamlit.
