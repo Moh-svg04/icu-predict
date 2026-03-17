@@ -294,14 +294,8 @@ with st.sidebar:
     map_mean     = c2.number_input("PAM (mmHg)", 30, 150, 68)
     spo2         = c1.number_input("SpO₂ (%)",  70, 100, 95, step=1)
     resp_rate    = c2.number_input("FR (/min)",   5,  50, 22)
-temperature = c1.number_input(
-    "Temp (°C)", 
-    min_value=34.0, 
-    max_value=42.0, 
-    value=37.8, 
-    step=0.1, 
-    format="%.1f"
-)    map_instab   = c2.number_input("Instab.PAM",  0,  50, 12, step=1)
+    temperature  = c1.number_input("Temp (°C)", 34.0, 42.0, 37.8, step=0.1, format="%.1f")
+    map_instab   = c2.number_input("Instab.PAM", 0, 50, 12, step=1)
 
     st.markdown('<div class="section-title" style="margin-top:1rem">🧪 Biologie</div>', unsafe_allow_html=True)
     c3, c4 = st.columns(2)
